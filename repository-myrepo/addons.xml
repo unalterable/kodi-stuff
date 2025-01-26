@@ -1,0 +1,17 @@
+<addons>
+    <addon id="plugin.video.mygraphqladdon"
+           name="GraphQL Context Menu Addon"
+           version="1.0.0"
+           provider-name="YourName"
+           extension point="xbmc.python.pluginsource">
+        <requires>
+            <import addon="xbmc.python" version="2.26.0"/>
+        </requires>
+        <extension point="xbmc.addon.contextmenu">
+            <item>
+                <label>Send to GraphQL API</label>
+                <action>RunPlugin(plugin://plugin.video.mygraphqladdon)</action>
+            </item>
+        </extension>
+    </addon>
+</addons>
